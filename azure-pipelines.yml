@@ -12,7 +12,8 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    scheme: ''
-    sdk: 'iphoneos'
+    actions: 'build'
     configuration: 'Release'
-    xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
+    sdk: 'iphoneos'
+    xcodeVersion: '12'
+    packageApp: false
